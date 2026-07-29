@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 신청하기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div id="section-login" class="hidden">
+      <h2>🎮 이벤트 신청</h2>
+      <p>디스코드 로그인이 필요합니다.</p>
+      <button class="btn" onclick="loginWithDiscord()">디스코드 로그인</button>
+    </div>
+
+    <div id="section-loading">
+      <h3>인증 및 데이터 처리 중...</h3>
+    </div>
+
+    <div id="section-form" class="hidden">
+      <h2>📝 이벤트 신청서 작성</h2>
+      <p><b id="display-nickname"></b> (<span id="display-username"></span>)</p>
+      
+      <form onsubmit="submitData(event)">
+        <label>로블록스 닉네임 *</label>
+        <input type="text" id="robloxName" required placeholder="RobloxUser123">
+
+        <label>신청 내용 *</label>
+        <textarea id="content" required placeholder="내용을 입력하세요."></textarea>
+
+        <button type="submit" id="btn-submit" class="btn">제출하기</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
