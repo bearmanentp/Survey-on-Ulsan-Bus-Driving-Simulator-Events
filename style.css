@@ -1,0 +1,42 @@
+body {
+  background-color: #1e1f22;
+  color: #dbdee1;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+.card {
+  background: #2b2d31;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+h2 { text-align: center; color: #fff; margin-top: 0; }
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px 0;
+  background: #313338;
+  border: 1px solid #000;
+  border-radius: 6px;
+  color: #fff;
+  box-sizing: border-box;
+}
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #5865f2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn:hover { background: #4752c4; }
+.hidden { display: none; }
