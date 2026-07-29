@@ -1,6 +1,6 @@
 const CLIENT_ID = "1476089479709069426";
 const MY_DOMAIN = "https://bearmanentp.github.io/Survey-on-Ulsan-Bus-Driving-Simulator-Events"; // 끝에 / 넣지 않기
-const GAS_API_URL = "https://script.google.com/macros/s/AKfycbyuKTi9cwXjL0vF7Sul4GDsV9IPgB-bkz_OdpZXuh0AAd02oGQQfK7_cGhOEEEr1qIq5Q/exec";
+const GAS_API_URL = "https://script.google.com/macros/s/AKfycbwXG6hGv_xPE8UW65eJcDpbDnvOULBj8JgQ395aqosZg2q_G5a9Jq0gL6O60qa4e2rnMw/exec";
 
 let currentUserData = null;
 
