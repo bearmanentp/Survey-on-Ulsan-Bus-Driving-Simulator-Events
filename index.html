@@ -23,8 +23,15 @@
       <p><b id="display-nickname"></b> (<span id="display-username"></span>)</p>
       
       <form onsubmit="submitData(event)">
-        <label>로블록스 닉네임 *</label>
-        <input type="text" id="robloxName" required placeholder="RobloxUser123">
+        <label>로블록스 영어 아이디 (Username) *</label>
+        <input 
+          type="text" 
+          id="robloxName" 
+          required 
+          pattern="[a-zA-Z0-9_]{3,20}" 
+          title="영문, 숫자, 언더바(_)만 사용하여 3~20자로 입력해주세요."
+          placeholder="예: RobloxUser123"
+        >
 
         <label>신청 내용 *</label>
         <textarea id="content" required placeholder="내용을 입력하세요."></textarea>
