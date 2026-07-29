@@ -8,16 +8,19 @@
 </head>
 <body>
   <div class="card">
+    <!-- 1. 로그인 안내 화면 -->
     <div id="section-login" class="hidden">
       <h2>🎮 이벤트 신청</h2>
       <p>디스코드 로그인이 필요합니다.</p>
       <button class="btn" onclick="loginWithDiscord()">디스코드 로그인</button>
     </div>
 
+    <!-- 2. 로딩 화면 -->
     <div id="section-loading">
       <h3>인증 및 데이터 처리 중...</h3>
     </div>
 
+    <!-- 3. 신청서 작성 화면 -->
     <div id="section-form" class="hidden">
       <h2>📝 이벤트 신청서 작성</h2>
       <p><b id="display-nickname"></b> (<span id="display-username"></span>)</p>
@@ -38,6 +41,12 @@
 
         <button type="submit" id="btn-submit" class="btn">제출하기</button>
       </form>
+    </div>
+
+    <!-- 4. 제출 완료 화면 (무한 반복 방지) -->
+    <div id="section-success" class="hidden" style="text-align: center;">
+      <h2>🎉 제출이 완료되었습니다!</h2>
+      <p style="color: #949ba4; margin-top: 10px;">신청이 정상적으로 접수되었습니다.<br>창을 닫으셔도 좋습니다.</p>
     </div>
   </div>
 
